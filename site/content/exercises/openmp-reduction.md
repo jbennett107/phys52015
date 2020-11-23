@@ -16,10 +16,10 @@ to see if there are any differences
 ## Template code and benchmarking
 
 In [`openmp-snippets/reduction-template.c`]({{< code-ref
-"openmp-snippets/reduction.template.c" >}}) is some code that times
+"openmp-snippets/reduction-template.c" >}}) is some code that times
 how long it takes to run the reduction.
 
-You can select the length of the vector the compute the dot product of
+You can select the length of the vector to compute the dot product of
 by passing a size on the commandline. For example, after compiling with
 
 ```
@@ -37,7 +37,7 @@ You should implement a correct reduction using the four different
 approaches listed in the code:
 
 1. "By hand", using the same kind of approach as in
-`openmp-snippets/reduction.hand.c`;
+`openmp-snippets/reduction-hand.c`;
 1. Using an atomic directive to protect the shared updates;
 1. Using a critical section to protect the shared updates;
 1. Using the reduction clause on a parallel loop.
